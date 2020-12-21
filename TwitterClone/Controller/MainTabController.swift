@@ -8,16 +8,44 @@
 import UIKit
 
 class MainTabController: UITabBarController {
-
+    
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = .white
+        button.backgroundColor = .twitterBlue
+        button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewControllers()
-        view.backgroundColor = .systemPink
+        configureUI()
     }
     
+    // MARK: - Selectors
+    @objc func actionButtonTapped() {
+        print("tapped")
+    }
+     
     // MARK: - Helpers
+    
+    func configureUI() {
+        view.addSubview(actionButton)
+        
+        let height: CGFloat = 56.0
+        actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor,
+                            right: view.rightAnchor,
+                            paddingBottom: 64,
+                            paddingRight: 16,
+                            width: height,
+                            height: height)
+        actionButton.layer.cornerRadius = height / 2
+
+    }
     
     func configureViewControllers() {
         let feed = templateNavigationController(image: UIImage(named: "home_unselected"),

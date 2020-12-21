@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0478462591034700573417 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0478452591034700573417 /* Extensions.swift */; };
+		3C04784C2591243A00573417 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04784B2591243A00573417 /* LoginController.swift */; };
+		3C047851259124F900573417 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C047850259124F900573417 /* RegistrationController.swift */; };
 		3C7C8B1E2587F6C7001921B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C8B1D2587F6C7001921B0 /* AppDelegate.swift */; };
 		3C7C8B202587F6C7001921B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C8B1F2587F6C7001921B0 /* SceneDelegate.swift */; };
 		3C7C8B252587F6C7001921B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7C8B232587F6C7001921B0 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C0478452591034700573417 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3C04784B2591243A00573417 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		3C047850259124F900573417 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		3C7C8B1A2587F6C7001921B0 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7C8B1D2587F6C7001921B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7C8B1F2587F6C7001921B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C04784A2591241D00573417 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3C04784B2591243A00573417 /* LoginController.swift */,
+				3C047850259124F900573417 /* RegistrationController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		3C7C8B112587F6C7001921B0 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +162,7 @@
 		3C7C8B532587F735001921B0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3C0478452591034700573417 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,6 +177,7 @@
 		3C7C8B562587F77C001921B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C04784A2591241D00573417 /* Auth */,
 				3C7C8B5D2587F873001921B0 /* MainTabController.swift */,
 				3C7C8B622587FD04001921B0 /* FeedController.swift */,
 				3C7C8B672587FD5D001921B0 /* ExploreController.swift */,
@@ -322,13 +339,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7C8B282587F6C7001921B0 /* TwitterClone.xcdatamodeld in Sources */,
+				3C0478462591034700573417 /* Extensions.swift in Sources */,
 				3C7C8B1E2587F6C7001921B0 /* AppDelegate.swift in Sources */,
 				3C7C8B722587FD8D001921B0 /* ConversationsController.swift in Sources */,
 				3C7C8B632587FD04001921B0 /* FeedController.swift in Sources */,
 				3C7C8B5E2587F873001921B0 /* MainTabController.swift in Sources */,
+				3C047851259124F900573417 /* RegistrationController.swift in Sources */,
 				3C7C8B6D2587FD73001921B0 /* NotificationsController.swift in Sources */,
 				3C7C8B202587F6C7001921B0 /* SceneDelegate.swift in Sources */,
 				3C7C8B682587FD5D001921B0 /* ExploreController.swift in Sources */,
+				3C04784C2591243A00573417 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
